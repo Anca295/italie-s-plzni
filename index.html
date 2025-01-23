@@ -3,36 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brat Uzovka</title>
+    <title>Moje stránka</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-size: 30px;
+            background-color: lightblue;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Tabulka s 2x3 okénky */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
             text-align: center;
-            transition: background-color 0.5s ease;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* Obrázky */
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .images-container img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Text v levém dolním rohu */
+        .footer-text {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 16px;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div>
-        epilepsie
+    <!-- Tabulka 2x3 s texty -->
+    <table>
+        <tr>
+            <td>Slovo 1</td>
+            <td>Slovo 2</td>
+            <td>Slovo 3</td>
+        </tr>
+        <tr>
+            <td>Slovo 4</td>
+            <td>Slovo 5</td>
+            <td>Slovo 6</td>
+        </tr>
+    </table>
+
+    <!-- Obrázky -->
+    <div class="images-container">
+        <img src="https://via.placeholder.com/150" alt="Obrázek 1">
+        <img src="https://via.placeholder.com/150" alt="Obrázek 2">
+        <img src="https://via.placeholder.com/150" alt="Obrázek 3">
+        <img src="https://via.placeholder.com/150" alt="Obrázek 4">
+        <img src="https://via.placeholder.com/150" alt="Obrázek 5">
+        <img src="https://via.placeholder.com/150" alt="Obrázek 6">
     </div>
 
-    <script>
-        const colors = ['blue', 'green', 'yellow'];
-        let currentColor = 0;
-
-        function changeColor() {
-            document.body.style.backgroundColor = colors[currentColor];
-            currentColor = (currentColor + 1) % colors.length;
-        }
-
-        setInterval(changeColor, 400); // změna barvy každých 10 ms
-    </script>
+    <!-- Text v levém dolním rohu -->
+    <div class="footer-text">
+        Jen pro studijní účely!
+    </div>
 </body>
-</html
+</html>
