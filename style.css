@@ -11,7 +11,7 @@
             text-align: left;
             padding: 1rem;
     
-            li { font-size: 3;}
+            
         }
         .main-content {
             padding: 20px;
@@ -48,3 +48,4 @@ pre{font-size: 2em;}
 h2{font-size: 3em;}
 p{font-size: 3em;}
 h3{font-size: 3em;}
+ul {font-size: 3;}
