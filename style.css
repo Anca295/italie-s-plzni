@@ -11,6 +11,7 @@
             text-align: left;
             padding: 1rem;
     
+            li { font-size: 3;}
         }
         .main-content {
             padding: 20px;
